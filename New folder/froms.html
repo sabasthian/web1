@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lerning HTML Froms</title>
+    </head>
+    <body>
+
+        <h1>Registration Form</h1>
+        <form action="process.php" method="POST">
+            <fieldset>
+            <!--Input type text-->
+            <label for="fname">First name: </label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name: </label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            
+            <!--Input type radio-->
+            <p>Choose your gender:</p>
+            <input type="radio" id ="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id ="female" name="gender" value="Female">
+            <label for="female">Fimale</label><br><br>
+
+            <!--Input type password-->
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br> 
+             
+            <!--input type data -->
+            <label for="birthday">Birthday</label>
+            <input type="date" id="birthday" name="Birthday"><br><br>
+
+            <!--Input Type Datetime-local-->
+            <label for="birthdaytime">Birthday (date and time):</label><br>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br><br>
+
+            <!-- Select element -->
+            <label for="religion">Choose your religion: </label><br>
+            <select id="religion" name="religion" multiple>
+                <option value="Christian">Christian</option>
+                <option value="Moslem">Moslem</option>
+                <option value="Budhist">Budhist</option>
+                <option value="Hindu">Hindu</option>
+            </select>
+            
+            <br><br>
+            <!--Textarea elemant-->
+            <label name="comment">Write your comment below:</label><br>
+            <textarea id="comment" name="comment" rows="10" clos="30"></textarea><br><br>
+
+            <!-- Input type color -->
+            <label for="favcolor">Select your favorite color:</label><br>
+            <input type="color" id="favcolor" name="favcolor"><br><br>
+
+            <!--Input type checkbox-->
+            <p>Choose your hobbies:</p>
+            <input type="checkbox" id="hobby1" name="hobby1" value="Badminton">
+            <label for="hobby1">Badminton</label><br>
+            <input type="checkbox" id="hobby2" name="hobby2" value="Futsal">
+            <label for="hobby2">Futsal</label><br>
+            <input type="checkbox" id="hobby3" name="hobby3" value="Football">
+            <label for="hobby3">Football</label><br>
+            <input type="checkbox" id="hobby4" name="hobby4" value="Basketball">
+            <label for="hobby4">Basketball</label><br><br>
+
+
+
+            <br><br>
+            <!--Input type submit -->
+            <input type="submit">
+
+            <!--Input type reset-->
+            <input type="reset">
+
+            <!--input type button-->
+            <input type="button" onclick="alert('Hello world!')" value="Check Me!">
+
+        </fieldset>
+        </form>    
+    </body>
+</html>

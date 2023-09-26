@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Learning HTML Tables</title>
+    </head>
+    <body>
+        <h1>Students Data</h1>
+
+        <table border="1">
+            <tr>
+                <!--- This is the table header -->
+                <th>Num.</th>
+                <th colspan="2">Nim/Name</th>
+                <th>Status</th>
+                <th>Attendance</th>
+            </tr>
+            <tr>
+                <!-- This is the table body -->
+                <td>1.</td>
+                <td>2281035</td>
+                <td>william</td>
+                <td rowspan="2">Inside</td>
+                <td>Present</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>321</td>
+                <td>budi</td>
+                <td>Absent</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>2452</td>
+                <td>agus</td>
+                <td>Inside</td>
+                <td>Present</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>12034</td>
+                <td>ricat</td>
+                <td>Oudside</td>
+                <td rowspan="2">Present</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>32984</td>
+                <td>yefta</td>
+                <td>Inside</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table border="1">
+            <tr>
+                <th>A</th>
+                <th colspan="3">B </th>
+            </tr>
+            <tr>
+                <th rowspan="2">C</th>
+                <th>D</th>
+                <th>E</th>
+                <th rowspan="3">F</th>
+            </tr>
+            <tr>
+                <th>G</td>
+                <th rowspan="2">H</th>
+            </tr>
+            <tr>
+                <th colspan="2">I</td>
+            </tr>
+            <tr>
+                <th colspan="4"> J</th>
+            </tr>
+        </table>
+    </body>
+</html>
