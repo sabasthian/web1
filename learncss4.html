@@ -4,14 +4,14 @@
         <title>Learn CSS part 4</title>
         <style>
             a{
-                color: pink;
+                color: white;
                 text-decoration: none;
                 border: 1px solid deeppink;
                 border: 1px solid pink;
                 background-color: hotpink;
-                padding: 5px;
+                padding: 10px 20px;
                 font-size: Arial, Helvetica, sans-serif;
-                border-radius: 10px;
+                border-radius: 20px;
             }
             a:link{
                 color:green;
@@ -26,11 +26,72 @@
             a:active{
                 color:deeppink
             }
+            a.fti{
+                color: white;
+                background-color: green;
+                border-color: green;
+            }
+            a.unai{
+                background-color: blue;
+                border-color: blue;
+            }
+
+            ul.web{
+                list-style-type: square;
+                list-style-position: inside;
+                background-color: pink;
+                border:2px solid black; 
+            }
+
+            ul li{
+                background-color: mintcream;
+            }
+
+            li.nav{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 150px;
+                background-color: #f1f1f1;
+            }
+
+            ul.nav li a{
+                display: block;
+                color:#000;
+                background-color:  #f1f1f1;
+                border-radius: 0;
+                border:none;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+
+            ul.nav li a:hover{
+                background-color: #555;
+                color: white
+            }
+
         </style>
     </head>
     <body>
         <h1>Learn CSS part 4</h1>
 
         <a href="https://google.com">Link to google</a>
+        <a class="fti" href="https://fti.unai.edu/">Link to FTI UNAI</a>
+        <a class="unai" href="https://unia.edu/">Link to UNAI</a>
+        
+        <p>My favourite foots: </p>
+        <ul class="web">
+            <li>Fried rice</li>
+            <li>rendang</li>
+            <li>Fried noodles</li>
+            </ul>
+
+        <ul class="nav">
+            <li><a href="hello.html">Home</a></li>
+            <li><a href="https://fti.unai.edu/"></a>FTI UNAI</li>
+            <li><a href="https://unia.edu/">UNAI</a></li>
+            <li><a href=""></a></li>
+
+        </ul>    
     </body>
 </html>
